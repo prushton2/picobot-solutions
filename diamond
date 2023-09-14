@@ -1,0 +1,23 @@
+# These lines are comments.
+  
+# Remember that rules are formatted as
+# State Surroundings -> Move NewState
+  
+# Picobot starts in state 0.
+# Here, state 0 goes N as far as possible
+
+#Homing itself to bottom left
+0 xEWS -> X 10
+0 ***x -> S 0
+0 *xWS -> E 0
+0 *ExS -> W 0
+
+10 x*** -> N 11
+
+11 *E** -> X 12
+11 *x** -> E 11
+
+12 **W* -> X 13
+12 **x* -> W 12
+
+13 **** -> E 10
